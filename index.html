@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for internship</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"  media="screen and (max-width: 1260px)" href="phone.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    
+
+    <header>SUPPORT STORYCORPS AND HELP PRESERVE THE STORIES OF OUR TIME IN AMERICA</header>
+   <nav class="navbar">
+    <input type="text" id="search" name="psearch" placeholder="Search" >
+    <ul class="ul1">
+        <li class="nav"><a href="#home">Home</a></li>
+        <li class="nav"><a href="#news">News</a></li>
+        <li class="nav"><a href="#contact">Contact</a></li>
+        <li class="nav"><a href="#about">About</a></li>
+     
+      </ul>
+     
+   </nav> 
+  
+   <section >
+    <div id="section1">
+        <nav id="hiring">
+
+            <h1 >We are Hiring!!! </h1>
+            <h2>WEB DEVELOPMENT INTERN</h2>
+            <h2>Details about intership</h2>
+<button id="time" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to get date and time</button>
+<p id="demo"></p>
+
+        </nav>
+        <div  id="nav2">
+            <p> <div><b>Department:</b> Digital & Technical Innovation</div>
+                <div><b>Division:</b> Finance & Administration </div>
+              <div><b>Location:</b> Brooklyn, NY</div>  </p>
+
+            </div>
+       
+        <p id="para">StoryCorps’ Digital & Technical Innovation department is a lean and dedicated team of professionals who work very closely with all departments in our organization to build and maintain StoryCorps’ award winning web and app technologies. The Web Development student intern will assist in updating and editing content for StoryCorps.org and other sites, creating and editing web page templates, and assisting in other web-related projects as necessary.</p>
+   
+        <div id="ul2">
+
+            <ul >Duties & Responsibilities <br>
+                Projects may include, but will not be limited to: <br>
+                <br>
+            <li>Write custom HTML, PHP, CSS and JavaScript for existing websites and applications.</li>
+            <li>Design, recommend and pitch improvements to new and existing features.</li>
+            <li>Assist in troubleshooting issues on web-based systems.</li>
+            <li>Update and edit website content, posts and pages.</li>
+            <li>Provide technical support related to web-based systems to internal teams.</li>
+            <li>Test and give feedback on new and existing technologies.</li>
+            <li>Create prototypes and experiment with new technologies and features as assigned.</li>
+           </ul>
+        </div>
+        <div id="table">
+
+            <table>
+                <tr>
+                    <th>S.NO</th>
+                    <th>POSITION</th>
+                    <th>AVERAGE CTC </th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Front end </td>
+                    <td>5 LPA</td>
+                </tr>
+                <tr>
+                 <td>2</td>
+                 <td>Back end </td>
+                 <td>6.8 LPA</td>
+             </tr>
+             <tr>
+                 <td>3</td>
+                 <td>Full Stack </td>
+                 <td>12 LPA</td>
+             </tr>
+            </table>
+        </div>
+    </div>
+   
+   </section>
+   <section id="section2">
+       <h2>INTERESTED ONE CAN FILL THIS FORM</h2>
+       <form  action="gbscv" id="form">
+           <label for="fname" >First Name:</label>
+           <input type="text" id="fname" name="fname" ><br>
+
+           <label for="lname" >Last Name:</label>
+           <input type="text" id="lname" name="lname"  ><br>
+
+           <label for="dob" >Date of Birth:</label>
+           <input type="date" id="dob" name="dob"  ><br>
+
+           <label for="add">Current Address:</label>
+           <textarea  id ="txt" name="text" rows="10" cols="30" placeholder="Write something here...."  ></textarea><br>
+
+           <label for="email">Enter your email:</label>
+           <input type="text" id="email" placeholder="xyz@gmail.com" name="email" ><br>
+
+           <label for="myfile">Upload your resume:</label>
+           <input type="file" id="myfile" name="myfile"  ><br>
+
+            <!-- <label for="intro">Range your skills</label>
+            <input type="range" name="words" id="skills" min="0" max="100"><br> -->
+            <label for="phone">Enter your phone number:</label>
+            <input type="number" id="phone" name="phone" placeholder="012-3456-789" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" ><br>
+
+            <label for="homepage">Add your linkedin url:</label>
+  <input type="text"  id="homepage" name="homepage" >
+
+  <br>
+  <input type="Submit" value="Submit" onclick="document.getElementById('submission').src='submit.html'">
+
+       </form>
+   </section>
+
+   <section id="section3">
+    <h1>MAJOR SUPPORTERS & PARTNERS</h1>
+       <div id="support">
+        <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQoGxWb0fcqicNS7zXG8qh26u2wWcaoWgtg&usqp=CAU" alt="paytm">
+        <img  id="img2" src="download.png">
+        <img  id="img3" src="samsung.png" alt="paytm">
+        <img  id="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQoGxWb0fcqicNS7zXG8qh26u2wWcaoWgtg&usqp=CAU" alt="paytm">
+       </div>
+       
+   </section>
+   <footer id="footer">Copyright © 2003-2022 StoryCorps, Inc. All rights reserved.</footer>
+
+   
+</body>
+<script>
+       var form=document.getElementById('form');
+    form.addEventListener('submit', function(event){
+      event.preventDefault();
+       console.log(document.getElementById('fname').value)
+       console.log(document.getElementById('lname').value)
+       console.log(document.getElementById('dob').value)
+       console.log(document.getElementById('txt').value)
+       console.log(document.getElementById('email').value)
+       console.log(document.getElementById('myfile').value)
+       console.log(document.querySelector('input[name=phone]').value)
+       console.log(document.getElementById('homepage').value)
+      
+    })
+</script>
+</html>
